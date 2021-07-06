@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/nashcrash-suggestion",
+            "outputPath": "dist/nashcrash-demo",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,6 +68,14 @@
           },
           "defaultConfiguration": "production"
         },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://rrvanzyl.github.io/nashcrash-demo/",
+            "name": "rrvanzyl",
+            "email": "rrvanzyl@gmail.com"
+          }
+        },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
@@ -107,5 +115,5 @@
       }
     }
   },
-  "defaultProject": "nashcrash-suggestion"
+  "defaultProject": "nashcrash-demo"
 }
