@@ -1,0 +1,23 @@
+<div class="card chat-card">
+  <div class="card-body">
+    <div class="row" style="margin-bottom: 1vh" *ngFor="let m of messages;">
+      <div class="col">
+        <div><span>{{m.time}}</span> <span style="font-size: 12px; color: #ffc107; font-weight: bold;">{{m.from}}:</span> </div>
+        <div>{{m.message}}</div>
+      </div>
+
+    </div>
+  </div>
+  <div class="card-footer">
+    <div class="row">
+      <div class="col-10">
+      <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+      </div>
+      <div class="col-2 center-center">
+      <span class="material-icons" style="color: #ffc107; font-size: 36px;">
+        send
+      </span>
+      </div>
+    </div>
+  </div>
+</div>

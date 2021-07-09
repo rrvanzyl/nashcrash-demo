@@ -1,0 +1,16 @@
+.profile-row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y:0;
+  font-size: 14px;
+  font-family: Staatliches, monospace;
+  width: 90%;
+
+  background: #29292a;
+  margin: 2vh;
+  padding: 1vh;
+  border-radius: 0.25rem;
+}
+
+.border-temp {
+  border: 1px solid;
+}

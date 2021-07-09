@@ -1,0 +1,60 @@
+
+<div class="grid-container">
+  <div class="logo center-center grey-border">
+    <img src="assets/logo.png" height="100vh" width="200vh" alt="logo" />
+  </div>
+  <div class="chat grey-border">
+    <app-chat></app-chat>
+  </div>
+  <div class="betting center-center grey-border">
+    <div class="card betting-card">
+      <div class="row">
+        <div class="col pad-0" style="padding-right: 0;">
+          <button
+            type="button"
+            class="btn bet-button"
+            [ngClass]="!betSelect ? 'bet-button-disable' : 'bet-button-selected'"
+            (click)="clickBet()"
+          >
+            Place your bets
+          </button>
+        </div>
+        <div class="col pad-0" style="padding: 0;">
+          <button
+            type="button"
+            class="btn bet-button"
+            [ngClass]="!botSelect ? 'bet-button-disable' : 'bet-button-selected'"
+            (click)="clickBot()"
+          >
+            Run a bot
+          </button>
+        </div>
+        <div class="col" style="padding-left: 0;">
+          <button
+            type="button"
+            class="btn bet-button"
+            [ngClass]="!historySelect ? 'bet-button-disable' : 'bet-button-selected'"
+            (click)="clickHistory()"
+          >
+            History
+          </button>
+        </div>
+      </div>
+      <app-betting *ngIf="betSelect"></app-betting>
+      <app-scripts *ngIf="botSelect"></app-scripts>
+      <app-history-full *ngIf="historySelect"></app-history-full>
+    </div>
+  </div>
+  <div class="running-totals grey-border">
+    <app-game-totals></app-game-totals>
+  </div>
+  <div class="profile grey-border">
+    <app-profile></app-profile>
+  </div>
+  <div class="history grey-border">
+    <app-history></app-history>
+  </div>
+  <div class="track center-center grey-border">
+    <img src="assets/track2.png" height="350vh" width="600vh" alt="track" />
+  </div>
+</div>

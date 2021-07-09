@@ -1,0 +1,42 @@
+.history-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . . . . . . ."
+    ". . . . . . . .";
+  height: 100%;
+  background: grey;
+  font-size: 36px;
+  margin: 0 15vh;
+  padding: 0.5vh 1vh;
+  font-family: Staatliches, monospace;
+  font-size: 22px;
+  border-radius: 0.25rem;
+}
+/*.car1 {*/
+/*  grid-area: car1;*/
+/*}*/
+/*.history1 {*/
+/*  grid-area: history1;*/
+/*  border-bottom: thick whitesmoke dashed;*/
+/*}*/
+/*.car2 {*/
+/*  grid-area: car2;*/
+/*}*/
+/*.history2 {*/
+/*  grid-area: history2;*/
+/*}*/
+
+.dash-line {
+  border-top: thick dashed white;
+}
+
+.win {
+  color: darkgreen;
+}
+
+.lose {
+  color: red;
+}

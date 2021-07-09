@@ -1,0 +1,98 @@
+<div class="container-fluid" style="max-height: 27vh;">
+  <div class="row center-center vert-center" style="font-size: 14px; font-family: Staatliches, monospace;">
+    <div class="col-2 form-check form-switch vert-center" >
+      <input class="form-check-input vert-center" type="checkbox" id="autobet" checked>
+      <label class="form-check-label vert-center" style="margin-top: 0.5vh; margin-left: 0.5vh;"
+             for="autobet">AUTOBET</label>
+    </div>
+    <div class="col-2 form-check form-switch vert-center" >
+      <input class="form-check-input vert-center" type="checkbox" id="advanced" checked>
+      <label class="form-check-label vert-center" style="margin-top: 0.5vh; margin-left: 0.5vh;"
+             for="advanced">ADVANCED</label>
+    </div>
+  </div>
+  <div class="row center-center" style="--bs-gutter-x: 0; margin: 0.5vh 0">
+    <div class="col-2">
+      <div class="car1">
+        <img [ngClass]="blueSelected ? 'blue-car-selected' : ''" (click)="getBlueCarSelected()"
+             src="assets/blue_car_alone_viewLeft.png" style="width: 95%;" />
+      </div>
+    </div>
+
+    <div class="col-5">
+      <div class="input-group">
+        <input class="form-control" type="text" id="blue-bet">
+        <div class="input-group-append ">
+          <span class="input-group-text label-text" (click)="changeBlueBetUOM()"><small>{{blueUOM}}</small></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-5">
+      <div class="input-group" style="flex-wrap: nowrap">
+        <span class="input-group-text label-text"><small>@</small></span>
+        <div class="input-group-prepend input-group-append ">
+          <input class="form-control label-text" type="text" id="blue-payout">
+        </div>
+        <div class="input-group-prepend input-group-append">
+          <span class="input-group-text label-text"><small>Cashout</small></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row center-center" style="--bs-gutter-x: 0;margin: 0.5vh 0">
+      <div class="col-2">
+        <div class="car2">
+          <img [ngClass]="redSelected ? 'red-car-selected' : ''" (click)="getRedCarSelected()"
+               src="assets/red_car_alone_viewLeft.png" style="width: 95%;"/>
+        </div>
+      </div>
+
+      <div class="col-5">
+        <div class="input-group">
+          <input class="form-control" type="text" id="red-bet">
+          <div class="input-group-append">
+            <span class="input-group-text label-text" (click)="changeRedBetUOM()"><small>{{redUOM}}</small></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-5">
+        <div class="input-group" style="flex-wrap: nowrap">
+          <span class="input-group-text label-text"><small>@</small></span>
+          <div class="input-group-prepend input-group-append">
+            <input class="form-control label-text" type="text" id="red-payout">
+          </div>
+          <div class="input-group-prepend input-group-append">
+            <span class="input-group-text label-text"><small>Cashout</small></span>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <div class="row center-center" style="font-size: 25px; font-family: Staatliches, monospace; color: #29292a;">
+    <div class="col-12 center-center">
+      WHO'S GONNA WIN?!
+    </div>
+  </div>
+  <div class="row center-center" style="font-size: 14px; font-family: Staatliches, monospace; color: #29292a;">
+    <div class="col-12 center-center">
+      1st place pays out at 1.98x
+    </div>
+  </div>
+  <div class="row center-center">
+    <div class="col-3 car1" >
+      <img src="assets/blue_car_alone_viewRight.png" style="width: 105%;" (click)="selectWager('blue')"/>
+      <img class="over-img" *ngIf="getCarWager('blue')" src="assets/checkered_flag.png" style="width: 108%;"/>
+    </div>
+    <div class="col-6 center-center">
+      <input class="form-control" type="text" id="wager" placeholder="WAGER">
+    </div>
+    <div class="col-3 car2" >
+      <img src="assets/red_car_alone_viewLeft.png" style="width: 108%;" (click)="selectWager('red')"/>
+      <img class="over-img" *ngIf="getCarWager('red')" src="assets/checkered_flag.png" style="width: 108%;"/>
+    </div>
+  </div>
+</div>

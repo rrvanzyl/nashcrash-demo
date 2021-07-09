@@ -1,0 +1,32 @@
+<div class="card results-card">
+  <div class="card-header">
+    <div class="header-container">
+      <div class="blue">
+        <img src="assets/blue_car_alone_viewLeft.png" style="width: 65%;" />
+      </div>
+      <div class="red">
+        <img src="assets/red_car_alone_viewLeft.png" style="width: 65%;" />
+      </div>
+      <div class="blue-payout center-center">CASHOUT</div>
+      <div class="blue-bet center-center">BET</div>
+      <div class="red-payout center-center">CASHOUT</div>
+      <div class="red-bet center-center">BET</div>
+      <div class="space-one"></div>
+      <div class="user vert-center">USER</div>
+      <div class="space-two"></div>
+      <div class="profit center-center">PROFIT</div>
+
+    </div>
+    <div class="card-body" style="overflow-y: auto; height: 35%; padding: 0">
+      <div class="users-container " *ngFor="let u of users;">
+        <div class="blue-payout center-center">1000x</div>
+        <div class="blue-bet center-center">100000</div>
+        <div class="red-payout center-center">1000x</div>
+        <div class="red-bet center-center">10000</div>
+        <div class="user vert-center">{{u.user_name}}</div>
+        <div class="profit center-center">10000</div>
+      </div>
+    </div>
+  </div>
+
+</div>

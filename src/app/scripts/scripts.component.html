@@ -1,0 +1,23 @@
+<!--<div class="container-fluid" style="max-height: 27vh; padding: 3vh; width: 90%">-->
+  <div class="card-body" style="overflow-y: auto; height: 27vh;">
+    <div class="row" *ngFor="let s of scripts;"
+         style="margin-bottom: 0.5vh; padding: 1vh 2vh; line-height: 2; background: #29292a; font-size: 16px; font-family: Staatliches, monospace; color: white">
+      <div class="col-9">{{s.name}}</div>
+      <div class="col-1 center-center">
+        <span class="btn-label material-icons" style="border-radius: 0.25rem; background: #33b5e5; font-size: 32px;">
+           arrow_right
+          </span>
+      </div>
+      <div class="col-1 center-center">
+       <span class="btn-label material-icons" style="border-radius: 0.25rem; background: #fb3!important; font-size: 32px;">
+           edit
+          </span>
+      </div>
+      <div class="col-1 center-center">
+         <span class="btn-label material-icons" style="border-radius: 0.25rem; background: #dc3545; font-size: 32px;">
+             delete_forever
+            </span>
+      </div>
+    </div>
+  </div>
+<!--</div>-->

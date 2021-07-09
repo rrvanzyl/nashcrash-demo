@@ -71,7 +71,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "baseHref": "https://rrvanzyl.github.io/nashcrash-demo/",
+            "baseHref": "https://rrvanzyl@gmail.com:RRv@nzy001@rrvanzyl.github.io/nashcrash-demo/",
             "name": "rrvanzyl",
             "email": "rrvanzyl@gmail.com"
           }
@@ -107,9 +107,10 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": ["./node_modules/bootstrap/dist/js/bootstrap.min.js"]
           }
         }
       }

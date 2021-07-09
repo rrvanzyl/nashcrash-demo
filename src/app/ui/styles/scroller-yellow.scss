@@ -1,0 +1,28 @@
+// scrollbars
+/* width */
+::-webkit-scrollbar {
+  width: 1vh;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #495057 !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffc107;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #d0b359;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  margin-left: 2vh !important;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  margin-left: 2vh !important;
+}

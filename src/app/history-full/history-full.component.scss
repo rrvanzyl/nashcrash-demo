@@ -1,0 +1,10 @@
+@import '../ui/styles/scroller-grey';
+
+.hash {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-left: 2vh;
+}
+
+

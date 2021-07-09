@@ -1,1 +1,82 @@
+@import 'app/ui/styles/scroller-yellow';
+@import '~bootstrap/scss/bootstrap';
+
+
+
 /* You can add global styles to this file, and also import other style files */
+body {
+  height: 100vh;
+  background-color: #2a2929;
+  background: url(assets/tyre-track-blue.png) #2a2929;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  //background-size: 100% auto;
+  //width: 100%;
+  color: #ffffff;
+  font: 10px/1.15 Lato, sans-serif;
+  overflow: hidden;
+}
+
+.bck {
+  background: url(assets/tyre-track.png) #29292a !important;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  width: 50%;
+}
+
+
+.row {
+   --bs-gutter-x: 0 !important;
+   --bs-gutter-y: 0 !important;
+}
+
+.center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vert-center {
+  display: flex;
+  align-items: center;
+}
+
+.form-control {
+  border-radius: 0 !important;
+  background: grey !important;
+  color: white !important;
+  border: grey !important;
+  font-family: Staatliches, monospace;
+  font-size: 18px;
+  padding: 0.5vh 0.75rem !important;
+  text-align: center;
+
+}
+
+.form-control:focus {
+  border-color: grey !important;
+  box-shadow: none;
+}
+
+.btn-check:focus + .btn, .btn:focus {
+  box-shadow: none !important;
+}
+
+
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #29292a;
+
+  font-family: Staatliches, monospace;
+  font-size: 22px;
+  opacity: 0.6;
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+  color: #29292a;
+  font-family: Staatliches, monospace;
+  font-size: 22px;
+  opacity: 0.6;
+}

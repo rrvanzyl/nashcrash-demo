@@ -1,0 +1,58 @@
+.results-card {
+  background: transparent;
+  height: 98%;
+  width: 100%;
+  margin-right: 2vh;
+  margin-bottom: 2vh;
+  //margin-top: 5vh;
+  opacity: 0.8;
+
+}
+
+
+.header-container {
+  display: grid;
+  grid-template-columns: 2fr 0.5fr 2fr 0.5fr 2fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "space-one blue blue red red space-two"
+    "user blue-payout blue-bet red-payout red-bet profit";
+  font-size: 14px; font-family: Staatliches, monospace;
+  border-bottom: thin solid grey;
+}
+.blue { grid-area: blue; }
+.red { grid-area: red; }
+.blue-payout { grid-area: blue-payout; }
+.blue-bet { grid-area: blue-bet; }
+.red-payout { grid-area: red-payout; }
+.red-bet { grid-area: red-bet; }
+.space-one { grid-area: space-one; }
+.user { grid-area: user; }
+.space-two { grid-area: space-two; }
+.profit { grid-area: profit; }
+
+.users-container {
+  display: grid;
+  grid-template-columns: 2fr 0.5fr 2fr 0.5fr 2fr 2fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "user blue-payout blue-bet red-payout red-bet profit";
+  font-size: 12px;
+  margin-bottom: 0.1vh;
+  background: #29292a;
+  height: 4vh;
+}
+
+.blue-payout { grid-area: blue-payout; }
+
+.blue-bet { grid-area: blue-bet; }
+
+.red-payout { grid-area: red-payout; }
+
+.red-bet { grid-area: red-bet; }
+
+.user { grid-area: user; }
+
+.profit { grid-area: profit; }

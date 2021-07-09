@@ -1,0 +1,48 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0;
+  grid-template-areas:
+    ". . ."
+    ". . .";
+}
+
+.car2 {
+  position: relative;
+}
+
+.car1 {
+  position: relative;
+}
+
+.over-img{
+  position: absolute;
+  top: -20%;
+  left: 5%;
+}
+
+.blue-car-selected {
+
+  -webkit-filter: drop-shadow(0 0 0.75rem rgb(0, 196, 255));
+  filter: drop-shadow(0 0 0.75rem rgb(0, 196, 255));
+}
+
+.red-car-selected {
+
+  -webkit-filter: drop-shadow(0 0 0.75rem rgb(227, 30, 45));
+  filter: drop-shadow(0 0 0.75rem rgb(227, 30, 45));
+}
+
+.label-text {
+  background: #212529;
+  color: white;
+  border: #212529;
+  font-family: Staatliches, monospace;
+  font-size: 160%;
+  min-width: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

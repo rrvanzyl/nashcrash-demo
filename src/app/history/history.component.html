@@ -1,0 +1,18 @@
+<div class="history-container">
+  <div class="">
+    <img src="assets/blue-car.png" />
+  </div>
+  <div class="center-center" [ngClass]="h < 1.98 ? 'lose' : 'win'"
+       *ngFor="let h of blue;">
+        {{h}}
+  </div>
+  <div class="dash-line">
+    <img src="assets/red-car.png" />
+  </div>
+  <div class=" center-center dash-line"
+        [ngClass]="h < 1.98 ? 'lose' : 'win'"
+        *ngFor="let h of red;"
+      >
+        {{h}}
+  </div>
+</div>

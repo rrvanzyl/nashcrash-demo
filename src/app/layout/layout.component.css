@@ -1,0 +1,62 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+  grid-template-rows: 1fr 4fr 1fr 4fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "logo track track profile"
+    "chat track track running-totals"
+    "chat history history running-totals"
+    "chat betting betting running-totals";
+  height: 100%;
+}
+.logo {
+  grid-area: logo;
+}
+.chat {
+  grid-area: chat;
+}
+.betting {
+  grid-area: betting;
+  padding: 2vh;
+}
+.running-totals {
+  grid-area: running-totals;
+}
+.profile {
+  grid-area: profile;
+}
+.history {
+  grid-area: history;
+}
+.track {
+  grid-area: track;
+}
+
+.grey-border {
+  /*border: solid thin gray;*/
+}
+
+.betting-card {
+  width: 40vw;
+  height: 100%;
+  background-color: #ffc1078f;
+  border-radius: 0.25rem;
+}
+
+.bet-button {
+  width: 100%;
+  font-size: 18px;
+  font-family: Staatliches, monospace;
+  border-radius: 0;
+}
+
+.bet-button-selected {
+  background: #29292a;
+  color: whitesmoke;
+}
+
+.bet-button-disable {
+  background: #5A5A5BFF;
+  color: #29292a;
+}
